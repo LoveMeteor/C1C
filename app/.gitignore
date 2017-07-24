@@ -1,0 +1,8 @@
+node_modules/
+
+# VS Code config file
+jsconfig.json
+.vscode/
+settings-dev.json
+settings.json
+npm-debug.log*

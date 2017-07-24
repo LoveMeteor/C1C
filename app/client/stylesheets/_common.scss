@@ -1,0 +1,165 @@
+
+// TODO Move this to the react root
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Telstra Akkurat', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size : 16px;
+}
+#react-root , #react-root > div {
+  height: 100%;
+}
+
+input {
+  font-family: 'Telstra Akkurat', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size : 16px;
+    outline: 0;
+}
+
+input::placeholder {
+    outline: 0;
+  font-weight: 300;
+  font-size : 16px;
+}
+
+
+// OVERWRITING BOOTSTRAP
+
+a ,a:hover, a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+.iconSVG{
+  svg {
+    width: 25px;
+  }
+  .colorBrand {
+    svg {
+      fill: #f36f21;
+    }
+  }
+}
+
+.isvg svg {
+  width: 100%;
+  height: 100%;
+}
+
+/*==================================================
+=            SIDEBAR                               =
+==================================================*/
+#sidebar{
+  color: #626262;
+  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+}
+#sidebar ul li {
+    margin: 0;
+}
+#sidebar ul li a {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #626262;
+    text-decoration: none;
+    display: block;
+    border-bottom: 2px solid #D1D1D3;
+    -webkit-transition:  background 0.3s ease-in-out;
+    -moz-transition:  background 0.3s ease-in-out;
+    -ms-transition:  background 0.3s ease-in-out;
+    -o-transition:  background 0.3s ease-in-out;
+    transition:  background 0.3s ease-in-out;
+}
+#sidebar ul li:hover a {
+    background: #F1641F;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+/*==================================================
+=            Top Nav                                  =
+==================================================*/
+.top-navbar {
+
+  .top-logo {
+    height: 68px;
+    width: 65px;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-nav-button {
+    display: inline-block;
+    width: 65px;
+    padding:12px;
+    margin-left: 10px;
+    opacity: 0.5;
+    svg{
+      fill: #FFF;
+    }
+    &.active {
+      opacity: 1;
+    }
+    &.pull-to-right {
+      position: absolute;
+      right: 20px;
+      opacity: 1;
+    }
+  }
+  .route-name {
+    font-size: 20px;
+    color: #fff;
+    line-height: 64px;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    margin-left: 20px;
+  }
+}
+
+/*==================================================
+=            Playlists                             =
+==================================================*/
+
+
+.on-off-switch {
+  display: flex;
+  color:$snd-text-color;
+  cursor: pointer;
+  .switch-wrapper {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    position: relative;
+    margin: 0 10px;
+    .switch-icon {
+      background-color: $snd-text-color;
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      left: calc(100% - 20px);
+      transition: all 0.2s ease;
+      &.active {
+        left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.popover-button {
+    position: relative;
+}
+.popover-button .trigger {
+
+}
+.popover-button .arrow {
+    position: relative;
+    width:100%;
+}
+.popover-button .arrow::after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #ff5600;
+    border-width: 6px;
+    margin-left: -6px;
+}
+.popover-button .list {
+    position: absolute;
+    background: #ff5600;
+    z-index: 100;
+    padding: 1px;
+    color: white;
+}
+.popover-button .list.left {
+    left: -10px;
+}
+.popover-button .list.right {
+    right: -10px;
+}
+.popover-button .list .item {
+    padding: 10px;
+    display: flex;
+}
+.popover-button .list .item.reverse {
+    background: white;
+    color: #ff5600;
+}
+.popover-button .list .item .name {
+    flex: 1;
+    margin: auto;
+}

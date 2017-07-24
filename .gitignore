@@ -1,0 +1,7 @@
+*~
+.idea/
+*.log
+
+.DS_Store
+
+design/presenter-assets/*

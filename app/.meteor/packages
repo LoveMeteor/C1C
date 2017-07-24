@@ -1,0 +1,57 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base@1.1.0             # Packages every Meteor app needs to have
+mongo@1.1.18                   # The database Meteor supports right now
+static-html@1.1.12_1
+reactive-var@1.0.11            # Reactive variable for tracker
+tracker@1.1.3                 # Meteor's client-side reactive programming library
+standard-minifier-js@2.1.0    # JS minifier run for production mode
+es5-shim@4.6.15                # ECMAScript 5 compatibility for older browsers.
+ecmascript@0.8.0              # Enable ECMAScript2015+ syntax in app code
+shell-server@0.2.3            # Server-side component of the `meteor shell` command
+
+#BACKEND
+accounts-base@1.3.0
+ostrio:files
+npm-bcrypt@0.9.2
+accounts-password@1.3.6
+ultimatejs:tracker-react
+dburles:collection-helpers
+aldeed:collection2
+momentjs:moment@2.15.1
+peerlibrary:aws-sdk
+underscore@1.0.10
+
+#FRONTEND
+ostrio:flow-router-extra
+session@1.1.7
+tap:i18n
+seba:minifiers-autoprefixer
+ccorcos:subs-cache
+fourseven:scss
+
+#Testing
+practicalmeteor:mocha
+practicalmeteor:chai
+xolvio:cleaner
+xolvio:backdoor
+dburles:factory
+random@1.0.10
+johanbrook:publication-collector
+dispatch:mocha
+
+#data
+reywood:publish-composite
+mdg:validated-method
+percolate:migrations
+
+# production
+ddp-rate-limiter@1.0.7
+alanning:roles
+tmeasday:acceptance-test-driver
+u2622:persistent-session
+dynamic-import
